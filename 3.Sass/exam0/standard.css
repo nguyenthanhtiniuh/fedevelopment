@@ -1,0 +1,34 @@
+.blog-post h1 {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+.blog-post p {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+.header {
+  text-align: center;
+}
+
+.blog-post,
+h2 {
+  color: red;
+}
+
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 15px;
+  -webkit-box-shadow: 15px 15px 4px #2550c7;
+  -ms-box-shadow: 15px 15px 4px #2550c7;
+  box-shadow: 15px 15px 4px #2550c7;
+}
+/*# sourceMappingURL=standard.css.map */

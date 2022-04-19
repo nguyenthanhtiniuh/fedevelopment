@@ -1,0 +1,62 @@
+$main-fonts: Arial,
+sans-serif;
+$headings-color: green;
+$text-color: red;
+
+// Nest Css with Mixins
+.blog-post {
+    h1 {
+        font-family: $main-fonts;
+        color: $text-color;
+    }
+
+    p {
+        font-family: $main-fonts;
+        color: $text-color;
+    }
+}
+
+h1 {
+    font-family: $main-fonts;
+    color: $text-color;
+    //Store data with sass variable
+}
+
+.header {
+    text-align: center;
+}
+
+.blog-post,
+h2 {
+    color: $text-color;
+}
+
+// Create Reusable Css with Mixins
+// #awesome {
+//     width: 150px;
+//     height: 150px;
+//     background-color: green;
+// }
+
+
+@mixin box-shadow($x, $y, $blur, $c) {
+    -webkit-box-shadow: $x $y $blur $c;
+    -moz-box-shadow: $x $y $blur $c;
+    -ms-box-shadow: $x $y $blur $c;
+    box-shadow: $x $y $blur $c;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+#awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px);
+    @include box-shadow(15px, 15px, 4px, rgb(37, 80, 199))
+}

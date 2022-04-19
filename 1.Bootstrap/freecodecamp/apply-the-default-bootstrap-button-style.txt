@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.Create a bootstrap Heading -->
+    <!-- 2. House our page within a Bootstrap container-fluid div -->
+
+    <div class="container-fluid">
+        <h3 class="text-primary text-center">jQuery Playground</h3>
+
+        <!-- 3.Create a Bootstrap Row -->
+        <div class="row">
+            <!-- 4.Split your Bootstrap row -->
+            <!-- 5.Create Bootstrap wells -->
+            <!-- 6.Add Elements within your Bootstrap wells -->
+            <!--7.Apply the Default Bootstrap Button Styles   -->
+            <div class="col-xs-6">
+                <div class="well"><button class="btn btn-default"></button><button class="btn btn-default"></button><button class="btn btn-default"></button></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="well"><button class="btn btn-default"></button><button class="btn btn-default"></button><button class="btn btn-default"></button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

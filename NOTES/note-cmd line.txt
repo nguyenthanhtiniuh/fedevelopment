@@ -1,0 +1,5 @@
+//comment line tips
+cls clear 
+mkdir create folder
+cd locate to direct folder like 
+cd .. locate to …

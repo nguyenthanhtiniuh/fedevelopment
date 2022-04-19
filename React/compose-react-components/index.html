@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Fruits extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return (
+                    <div>
+                        <h2>Fruits:</h2>
+                        { /* Change code below this line */}
+                        <NonCitrus />
+                        <Citrus />
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        class TypesOfFood extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return (
+                    <div>
+                        <h1>Types of Food:</h1>
+                        { /* Change code below this line */}
+                        <Fruits />
+                        { /* Change code above this line */}
+                        <Vegetables />
+                    </div>
+                );
+            }
+        };
+
+        class TypesOfFood extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return (
+                    <div>
+                        <h1>Types of Food:</h1>
+                        {/* Change code below this line */}
+                        <Fruits />
+                        {/* Change code above this line */}
+                        <Vegetables />
+                    </div>
+                );
+            }
+        };
+        // The TypesOfFood component should return a single div element.
+
+        // The TypesOfFood component should render the Fruits component after the h1 element.
+
+        // The TypesOfFood component should render the Vegetables component after Fruits.
+
+        // The TypesOfFood component should render to the DOM within the div with the id challenge - node.
+        const ShoppingCart = (props) => {
+            return (
+                <div>
+                    <h1>Shopping Cart Component</h1>
+                </div>
+            )
+        };
+        // Change code below this line
+        ShoppingCart.defaultProps = {
+            items: 0
+        }
+
+        ReactDOM.render(<TypesOfFood />, document.getElementById("challenge-node"));
+
+        // Override Default Props
+        const Items = (props) => {
+            return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+        }
+
+        Items.defaultProps = {
+            quantity: 0
+        }
+
+        class ShoppingCart extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                { /* Change code below this line */ }
+                return <Items quantity={10} />
+                { /* Change code above this line */ }
+            }
+        };
+
+        // use - propTypes - to - define - the - props - you - expect
+        // Note: As of React v15.5.0, PropTypes is imported independently from React, like this: import PropTypes from 'prop-types';
+        const Items = (props) => {
+            return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+        };
+
+        // Change code below this line
+        Items.propTypes = {
+            quantity: PropTypes.number.isRequired
+        };
+        // Change code above this line
+
+        Items.defaultProps = {
+            quantity: 0
+        };
+
+
+        class ShoppingCart extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return <Items />
+            }
+        };
+
+        // access - props - using - this - props
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+            }
+            render() {
+                return (
+                    <div>
+                        { /* Change code below this line */}
+                        <Welcome />
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        class Welcome extends React.Component {
+            constructor(props) {
+                super(props);
+
+            }
+            render() {
+                return (
+                    <div>
+                        { /* Change code below this line */}
+                        <p>Hello, <strong></strong>!</p>
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        // Access Props Using this.props
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+            }
+            render() {
+                return (
+                    <div>
+                        { /* Change code below this line */}
+
+                        <Welcome name="Jessica" />
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        class Welcome extends React.Component {
+            constructor(props) {
+                super(props);
+
+            }
+            render() {
+                return (
+                    <div>
+                        { /* Change code below this line */}
+                        <p>Hello, <strong>{this.props.name}</strong>!</p>
+
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        //review-using-props-with-stateless-functional-components
+        class CampSite extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return (
+                    <div>
+                        <Camper />
+                    </div>
+                );
+            }
+        };
+
+        // Change code below this line
+        const Camper = props => <p>{props.name}</p>;
+
+        Camper.defaultProps = {
+            name: "CamperBot"
+        };
+
+        Camper.propTypes = {
+            name: PropTypes.string.isRequired
+        };
+
+        // create a stateful Component
+        class StatefulComponent extends React.Component {
+            constructor(props) {
+                super(props);
+                // Only change code below this line
+                this.state = {
+                    name: "William"
+                }
+                // Only change code above this line
+            }
+            render() {
+                return (
+                    <div>
+                        <h1>{this.state.name}</h1>
+                    </div>
+                );
+            }
+        };
+
+        // render - state -in -the - user - interface
+        class MyComponent extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    name: 'freeCodeCamp'
+                }
+            }
+            render() {
+                return (
+                    <div>
+                        { /* Change code below this line */}
+                      
+                            <h1>{this.state.name}</h1>
+                        
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+
+        // render - state -in -the - user - interface - another - way
+        class MyComponent extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = {
+                        name: 'freeCodeCamp'
+                    }
+                }
+                render() {
+                    // Change code below this line
+
+                    // Change code above this line
+                    return (
+                        <div>
+                            { /* Change code below this line */}
+
+                            { /* Change code above this line */}
+                        </div>
+                    );
+                }
+            };
+
+    </script>
+</body>
+
+</html>

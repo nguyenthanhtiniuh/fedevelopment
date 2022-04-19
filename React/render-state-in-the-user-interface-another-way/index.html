@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class MyComponent extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    name: 'freeCodeCamp'
+                }
+            }
+            render() {
+                // Change code below this line
+                const name = this.state.name;
+                // Change code above this line
+                return (
+                    <div>
+                        { /* Change code below this line */}
+                        <div>
+                            { /* change code below this line */}
+                            <h1>{name}</h1>
+                            { /* change code above this line */}
+                        </div>
+                        { /* Change code above this line */}
+                    </div>
+                );
+            }
+        };
+// MyComponent should have a key name with value freeCodeCamp stored in its state.
+
+// MyComponent should render an h1 heading element enclosed in a single div.
+
+// The rendered h1 tag should include a reference to { name }.
+
+// The rendered h1 heading element should contain text rendered from the component's state.
+    </script>
+</body>
+
+</html>
